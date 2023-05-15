@@ -232,11 +232,16 @@ nav {
         width: 280px;
         height: 100vh;
         padding-top: 4.5rem;
-        background-color: rgb(22, 21, 21);
-        transition: left 1s ease-in-out;
+        background-color: rgba(156, 149, 149, 0.075);
+        transition: left 0.2s ease-in-out;
+        opacity: 0;
+        transition: 0 0.3s ease-in-out;
     }
     .navbar-collapse.show {
         right: 0;
+    }
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
     }
 }
 
