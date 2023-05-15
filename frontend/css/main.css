@@ -234,8 +234,6 @@ nav {
         padding-top: 4.5rem;
         background-color: rgba(156, 149, 149, 0.075);
         transition: left 0.2s ease-in-out;
-        opacity: 0;
-        transition: 0 0.3s ease-in-out;
     }
     .navbar-collapse.show {
         right: 0;
