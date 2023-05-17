@@ -1,0 +1,78 @@
+<nav class="navbar navbar-expand-lg d-flex p-0 float-sm-start fixed-top">
+  <div class="container-fluid">
+    <!-- logo -->
+    <!-- <a class="navbar-brand d-flex justify-content-left align-items-center" href="#right_top_slider"><img class="logo"
+          src="https://fakeimg.pl/100x40/?text=HowSu"></a> -->
+    <a class="navbar-brand text-black p-0">HowSu</a>
+    <div class="right justify-content-end">
+      <button class="navbar-toggler border" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-4">
+          <li class="nav-item">
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#login"><a
+                class="nav-link active text-black d-flex align-items-center m-0 p-0" aria-current="page" href="#">
+                <i class="fas fa-shopping-cart"></i>
+                <p class="m-0 px-2 d-none d-lg-block">購物車</p>
+              </a></button>
+          </li>
+          <li class="nav-item d-flex align-items-center">
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#login">
+              <a class="nav-link text-black" href="#">登入</a>
+            </button>
+          </li>
+          <li class="nav-item d-flex align-items-center">
+            <button type="button" class="btn">
+              <a class="nav-link active text-black" aria-current="page" href="#">註冊</a>
+            </button>
+          </li>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+<!-- PopoverArea -->
+<!-- Modal -->
+<div class="modal fade" id="login" tabindex="-1" aria-labelledby="loginLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="loginLabel">登入</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- form_login -->
+        <form action="#" name="login" id="login" method="post">
+          <div class="mb-4 mx-4">
+            <div class="row"></div>
+            <label for="exampleFormControlInput1" class="form-label">帳號</label>
+            <input type="email" class="form-control" id="email" placeholder="email">
+          </div>
+          <div class="mb-4 mx-4">
+            <label for="login" class="form-label">密碼</label>
+            <input type="password" class="form-control" id="password" placeholder="password">
+          </div>
+          <div class="mb-4 mx-4">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="rememberMe">
+              <label class="form-check-label" for="rememberMe">
+                記住我
+              </label>
+            </div>
+          </div>
+          <!-- <div class="text-center">
+                        <input type="submit" value="提交" class="btn border">
+                      </div> -->
+      </div>
+      <div class="modal-footer">
+        <input type="submit" value="登入" class="btn border">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
+      </div>
+      </form>
+    </div>
+  </div>
+</div>

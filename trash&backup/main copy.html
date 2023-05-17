@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/main.css" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.js'></script>
+  <script>
+
+    $(document).ready(function () {
+      // 視窗有改變時 :
+      $(window).resize(function () {
+        let w = $(window).width();
+        if (w > 993) {
+          $(".hamburger").hide();
+          $(".sidebar-collapse").hide();
+          $(".search").show();
+          $(".menu").show();
+        } else {
+          $(".hamburger").show();
+          $(".sidebar-collapse").show();
+          $(".search").hide();
+          $(".menu").hide();
+        }
+      });
+
+      $(".hamburger").click(function () {
+
+        if (document.getElementById('hamburger').className == "hamburger") {
+          document.getElementById('hamburger').className = "hamburger";
+        }
+        else {
+          document.getElementById('hamburger').className = "hamburger";
+        }
+        $(".menu").fadeToggle();
+        $(".search-700").fadeToggle();
+
+      });
+
+    });
+
+  </script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-light d-flex p-0 float-sm-start fixed-top">
+    <div class="container-fluid">
+      <!-- logo -->
+      <a class="navbar-brand d-flex justify-content-left align-items-center" href="#right_top_slider"><img class="logo"
+          src="https://fakeimg.pl/100x40/?text=HowSu"></a>
+      <!-- hamberger -->
+      <div class="right justify-content-end">
+        <div class="sidebar-collapse">
+          <button id="hamburger" class="hamburger bg-white d-flex align-items-center" type="button">
+            <span class="navbar-toggler-icon m-2"></span>
+          </button>
+          <!--  -->
+          <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-4 menu">
+              <li class="nav-item">
+                <a class="nav-link active text-black" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-black" href="#">Link</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  </nav>
+
+
+
+</body>
+
+</html>

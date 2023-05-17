@@ -1,0 +1,18 @@
+/* .top-bg {
+    background-image: url(https://s2.best-wallpaper.net/wallpaper/1920x1200/1410/Coast-sea-waves-sunset-clouds_1920x1200.jpg);
+    background-image: url(img/Coast-sea-waves-sunset-clouds_B.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    height: 300px;
+    width: 100%;
+} */
+
+.top-bg img {
+    background-repeat: no-repeat;
+    background-size: auto;
+    width: 100%;
+}
+
+.test {
+    font-size: 100px;
+}
