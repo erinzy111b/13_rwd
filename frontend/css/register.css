@@ -1,3 +1,11 @@
+body {
+    background-color: rgba(226, 226, 226, 0.315);
+}
+
+.container {
+    max-width: 1100px !important;
+}
+
 .top-bg {
     background-image: url(https://s2.best-wallpaper.net/wallpaper/1920x1200/1410/Coast-sea-waves-sunset-clouds_1920x1200.jpg);
     /* background-image: url(../img/Coast-sea-waves-sunset-clouds_B.jpg); */

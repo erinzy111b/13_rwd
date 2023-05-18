@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh_TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HowSu 好宿</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.css'
+    integrity='sha512-+ouAqATs1y4kpPMCHfKHVJwf308zo+tC9dlEYK9rKe7kiP35NiP+Oi35rCFnc16zdvk9aBkDUtEO3tIPl0xN5w=='
+    crossorigin='anonymous' />
+  <link rel="stylesheet" href="css/_header.css" />
+  <link rel="stylesheet" href="js/_header.js" />
+  <link rel="stylesheet" href="css/register.css" />
+
+  <script>
+    function loadHeader(frame) {
+      if (frame.contentDocument && frame.contentDocument.body) {
+        frame.insertAdjacentHTML('afterend', frame.contentDocument.body.innerHTML);
+        frame.remove();
+      } else {
+        setTimeout(function () { loadHeader(frame) }, 50);
+      }
+    }
+  </script>
+
+</head>
+
+<body>
+  <!-- header -->
+  <iframe id="header-iframe" src="layout/_header.html" onload="loadHeader(this)"></iframe>
+  <!-- <iframe src="layout/_header.html"
+    onload="this.insertAdjacentHTML('afterend',(this.contentDocument.body||this.contentDocument).innerHTML);this.remove()"></iframe> -->
+
+
+
+  <!-- content -->
+
+
+
+  <!--
+  <div class="container">
+    <div class="row">
+      <div class="bg p-0 m-0"><img src="img/Coast-sea-waves-sunset-clouds_B.jpg" alt=""></div>
+      <div class="col-12 p-0 m-0 position-relative"> -->
+  <div class="top-bg"></div>
+  <!-- <div class="position-absolute top-50 start-50 translate-middle"></div>
+      </div>
+    </div>
+  </div> -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="test">123</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

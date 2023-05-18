@@ -23,8 +23,7 @@
   <!-- header -->
   <iframe src="layout/_header.html"
     onload="this.insertAdjacentHTML('afterend',(this.contentDocument.body||this.contentDocument).innerHTML);this.remove()"></iframe>
-
-
+  <!-- /header -->
 
   <!-- content -->
 
@@ -45,11 +44,9 @@
     <div class="position-absolute top-50 start-50 translate-middle w-100" style="height: 70%;">
       <div class="search-room px-4 py-4 rounded" style="height: 100%;">
 
-
-
         <form action="" method="get" class="search-room-form rounded">
           <div class="row d-flex align-items-center w-100 m-0 p-0" style="line-height:100%; height:100%;">
-            <div class="col-12 col-md-8 col-lg-10 d-lg-flex">
+            <div class="col-12 col-md-8 col-lg-10 d-lg-flex mt-4 mt-md-0">
               <div class="col-12 col-lg-3 my-1 d-flex align-items-center">
                 <div class="p-3 fs-4"><i class="fa-solid fa-location-dot"></i></div>
                 <select class="form-select">
@@ -66,7 +63,6 @@
                 </select>
               </div>
 
-
               <div class="col-12 col-lg-3 my-1 d-flex align-items-center">
                 <div class="p-3 fs-4"><i class="fa-solid fa-child-reaching"></i></div>
                 <select class="form-select">
@@ -81,38 +77,27 @@
                   <option value="8">8</option>
                   <option value="9">9</option>
                 </select>
-
-
               </div>
-
 
               <div class="col-12 col-lg-6 my-2">
 
-
-
-                <div class="col-12"><label class="mb-4">入住區間</label></div>
-
-
+                <div class="col-12"><label class="mb-2">入住區間</label></div>
 
                 <div class="col-12">
 
+                  <i class="fa-solid fa-right-to-bracket mx-1"></i>
+                  <input type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31"
+                    class="justify-content-center me-1 p-0">
 
-                  <i class="fa-solid fa-right-to-bracket"></i><input type="date" id="start" name="trip-start"
-                    value="2018-07-22" min="2018-01-01" max="2018-12-31" class="justify-content-center mx-1">
-
-                  <i class="fa-solid fa-right-from-bracket"></i><input type="date" id="start" name="trip-start"
-                    value="2018-07-22" min="2018-01-01" max="2018-12-31" class="justify-content-center mx-1">
+                  <i class="fa-solid fa-right-from-bracket mx-1"></i>
+                  <input type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31"
+                    class="justify-content-center me-1 p-0">
 
                 </div>
-
               </div>
-
-
-
             </div>
 
-
-            <div class="col-12 col-md-4 col-lg-2 d-flex align-items-center justify-content-center my-2 px-4">
+            <div class="col-12 col-md-4 col-lg-2 d-flex align-items-center justify-content-center mb-4 mb-md-0 px-4">
               <div class="col-12 col-lg-1 d-flex align-items-center justify-content-center w-100">
                 <button type="submit" class="btn search-room-btn w-100">
                   <i class="fa-solid fa-magnifying-glass"></i>
@@ -120,18 +105,12 @@
               </div>
             </div>
 
-
           </div>
-
         </form>
-
-
-
       </div>
-
     </div>
   </div>
-
+  <!-- /top-area -->
 
 
 
@@ -151,7 +130,13 @@
     </div>
   </div>
 
+
+  <!-- /content -->
+
+
   <!-- footer -->
+
+  <!-- /footer -->
 
 
 </body>
