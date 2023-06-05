@@ -1,0 +1,185 @@
+<div class="p-0 m-0 position-relative">
+
+  <!-- sm -->
+  <img src="img/mattress-2489615_1280.jpg" alt="" class="d-md-none top-bg-sm">
+
+  <!-- md -->
+  <!-- <img src="img/top-bg-md.jpg" alt="" class="d-md-none d-none d-sm-block top-bg-sm"> -->
+
+  <!-- lg -->
+  <img src="img/top-bg-lg.jpg" alt="" class="d-lg-none d-none d-md-block top-bg-md">
+
+  <!-- xl -->
+  <!-- <img src="img/wp4414493.jpg" alt="" class="d-xxl-none d-none d-lg-block"> -->
+
+  <!-- xxl -->
+  <img src="img/316-2000x400.jpg" alt="" class="d-none d-lg-block top-bg-lg">
+
+  <div class="position-absolute top-50 start-50 translate-middle w-100" style="height: 65%;">
+
+    <div class="search-room px-4 py-4 rounded-2 shadow" style="height: 100%;">
+
+
+      <!-- 搜尋表單 -->
+
+
+      <form action="search-result.html" method="get" class="search-room-form rounded-2">
+        <div class="row d-flex align-items-center w-100 m-0 p-0" style="line-height:100%; height:100%;">
+          <div class="col-12 col-md-8 col-lg-10 d-lg-flex mt-4 mt-md-0">
+
+            <!-- 入住地點 -->
+
+            <div class="col-12 col-lg-3 my-1 d-flex align-items-center">
+              <div class="p-3 fs-4"><i class="fa-solid fa-location-dot"></i></div>
+              <select class="form-select">
+                <option selected>想住哪</option>
+                <option value="1">台北</option>
+                <option value="2">桃園</option>
+                <option value="3">新竹</option>
+                <option value="4">苗栗</option>
+                <option value="5">南投</option>
+                <option value="6">雲林</option>
+                <option value="7">台中</option>
+                <option value="8">嘉義</option>
+                <option value="9">台南</option>
+              </select>
+            </div>
+
+            <!-- 入住人數 -->
+
+            <div class="col-12 col-lg-3 my-1 d-flex align-items-center">
+              <div class="p-3 fs-4"><i class="fa-solid fa-child-reaching"></i></div>
+              <select class="form-select">
+                <option selected>幾個人</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+              </select>
+            </div>
+
+
+            <!-- 入住區間 -->
+
+            <div class="col-12 col-lg-6 my-2">
+
+              <div class="col-12"><label class="mb-2">入住區間</label></div>
+
+              <div class="col-12">
+
+                <i class="fa-solid fa-right-to-bracket mx-1"></i>
+                <input type="date" id="start" name="trip-start" value="2023-06-03" min="2023-06-03" max="2023-09-03"
+                  class="justify-content-center me-1 p-0">
+
+                <i class="fa-solid fa-right-from-bracket mx-1"></i>
+                <input type="date" id="start" name="trip-start" value="2023-06-04" min="2023-06-04" max="2023-09-03"
+                  class="justify-content-center me-1 p-0">
+              </div>
+            </div>
+          </div>
+
+          <!-- 搜尋鍵 -->
+
+          <div class="col-12 col-md-4 col-lg-2 d-flex align-items-center justify-content-center mb-4 mb-md-0 px-4">
+            <div class="col-12 col-lg-1 d-flex align-items-center justify-content-center w-100">
+              <button type="submit" class="btn search-room-btn w-100">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </form>
+
+    </div>
+
+  </div>
+</div>
+
+
+
+
+<!-- <div class="p-0 m-0 position-relative">
+
+  <img src="img/mattress-2489615_1280.jpg" alt="" class="d-md-none top-bg-sm">
+
+
+  <img src="img/top-bg-lg.jpg" alt="" class="d-lg-none d-none d-md-block top-bg-md">
+
+
+  <img src="img/316-2000x400.jpg" alt="" class="d-none d-lg-block top-bg-lg">
+
+  <div class="position-absolute top-50 start-50 translate-middle w-100" style="height: 65%;">
+
+    <div class="search-room px-4 py-4 rounded-2" style="height: 100%;">
+
+      <form action="" method="get" class="search-room-form rounded-2">
+        <div class="row d-flex align-items-center w-100 m-0 p-0" style="line-height:100%; height:100%;">
+          <div class="col-12 col-md-8 col-lg-10 d-lg-flex mt-4 mt-md-0">
+            <div class="col-12 col-lg-3 my-1 d-flex align-items-center">
+              <div class="p-3 fs-4"><i class="fa-solid fa-location-dot"></i></div>
+              <select class="form-select">
+                <option selected>想住哪</option>
+                <option value="1">台北</option>
+                <option value="2">桃園</option>
+                <option value="3">新竹</option>
+                <option value="4">苗栗</option>
+                <option value="5">南投</option>
+                <option value="6">雲林</option>
+                <option value="7">台中</option>
+                <option value="8">嘉義</option>
+                <option value="9">台南</option>
+              </select>
+            </div>
+
+            <div class="col-12 col-lg-3 my-1 d-flex align-items-center">
+              <div class="p-3 fs-4"><i class="fa-solid fa-child-reaching"></i></div>
+              <select class="form-select">
+                <option selected>幾個人</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+              </select>
+            </div>
+
+            <div class="col-12 col-lg-6 my-2">
+
+              <div class="col-12"><label class="mb-2">入住區間</label></div>
+
+              <div class="col-12">
+
+                <i class="fa-solid fa-right-to-bracket mx-1"></i>
+                <input type="date" id="start" name="trip-start" value="2023-06-03" min="2023-06-03" max="2023-09-03"
+                  class="justify-content-center me-1 p-0">
+                <i class="fa-solid fa-right-from-bracket mx-1"></i>
+                <input type="date" id="start" name="trip-start" value="2023-06-04" min="2023-06-04" max="2023-09-03"
+                  class="justify-content-center me-1 p-0">
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4 col-lg-2 d-flex align-items-center justify-content-center mb-4 mb-md-0 px-4">
+            <div class="col-12 col-lg-1 d-flex align-items-center justify-content-center w-100">
+              <button type="submit" class="btn search-room-btn w-100">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </form>
+    </div>
+  </div>
+</div> -->

@@ -1,0 +1,33 @@
+.bottom-bg {
+    background-color: rgb(72, 90, 90);
+    color: white;
+    height: 100%;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.bottom-bg li {
+    background-color: rgba(240, 248, 255, 0) !important;
+    color: azure;
+    border: 0ch;
+}
+
+.bottom-bg a:hover {
+    color: rgb(169, 175, 175);
+}
+
+.bottom-bg img {
+    background-color: rgb(240, 255, 255);
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.title {
+    padding-bottom: 20px;
+    padding-left: 5px;
+}

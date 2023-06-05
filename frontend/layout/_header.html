@@ -1,10 +1,17 @@
-<nav>
+<!-- navbar 因故寬頁面與窄頁面分開做 -->
+<!-- 改動時須改兩處
+     1. bigger than lg
+     2. smaller than lg -->
+
+<!-- bigger than lg -->
+
+<nav class="d-none d-lg-block">
 
   <div class="navbar navbar-expand-lg d-flex p-0 float-sm-start fixed-top">
 
 
     <div class="container-fluid">
-      <a class="navbar-brand text-black p-0">HowSu</a>
+      <a class="navbar-brand text-black p-0" href="home.html">HowSu</a>
       <div class="right justify-content-end">
         <button class="navbar-toggler border" type="button" data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -14,10 +21,12 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-4">
             <li class="nav-item">
-              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#login"><a
-                  class="nav-link active text-black d-flex align-items-center m-0 p-0" aria-current="page" href="#">
-                  <i class="fas fa-shopping-cart"></i>
-                  <p class="m-0 px-2 d-none d-lg-block">購物車</p>
+              <button type="button" class="btn" data-bs-toggle="modal"><a
+                  class="nav-link active text-black d-flex align-items-center m-0 p-0" aria-current="page"
+                  href="cart.html">
+                  <!-- <i class="fas fa-shopping-cart"></i> -->
+                  <!-- <p class="m-0 px-2 d-none d-lg-block">購物車</p> -->
+                  購物車
                 </a></button>
             </li>
             <li class="nav-item d-flex align-items-center">
@@ -27,9 +36,15 @@
             </li>
             <li class="nav-item d-flex align-items-center">
               <button type="button" class="btn">
-                <a class="nav-link active text-black" aria-current="page" href="#">註冊</a>
+                <a class="nav-link active text-black" aria-current="page" href="register.html">註冊</a>
               </button>
             </li>
+            <li class="nav-item d-flex align-items-center">
+              <button type="button" class="btn">
+                <a class="nav-link active text-black" aria-current="page" href="profile.html">會員資料</a>
+              </button>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
@@ -39,6 +54,131 @@
 
 
 </nav>
+
+<!-- / bigger than lg -->
+
+
+
+
+
+<!-- smaller than lg -->
+
+<nav class="d-lg-none">
+
+  <div class="navbar navbar-expand-lg d-flex p-0 float-sm-start fixed-top">
+
+
+    <div class="container-fluid">
+      <a class="navbar-brand text-black p-0" href="home.html">HowSu</a>
+      <div class="d-flex">
+
+        <button class="navbar-toggler border btn btn-secondary dropdown-toggle" type="button" id="navbarDropdown"
+          data-bs-toggle="dropdown" aria-expanded="false">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <ul class="dropdown-menu dropdown-menu-end m-auto mb-lg-0" aria-labelledby="navbarDropdown">
+          <li class="dropdown-item mx-auto">
+            <button type="button" class="btn" data-bs-toggle="modal">
+              <a class="nav-link text-black" aria-current="page" href="cart.html">
+                <!-- <i class="fas fa-shopping-cart"></i> -->
+                <!-- <p class="m-0 px-2 d-none d-lg-block">購物車</p> -->
+                購物車
+              </a>
+            </button>
+          </li>
+          <li class="dropdown-item align-items-center">
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#login">
+              <a class="nav-link text-black" href="#">登入</a>
+            </button>
+          </li>
+          <li class="dropdown-item align-items-center">
+            <button type="button" class="btn">
+              <a class="nav-link active text-black" aria-current="page" href="register.html">註冊</a>
+            </button>
+          </li>
+          <li class="dropdown-item align-items-center">
+            <button type="button" class="btn">
+              <a class="nav-link active text-black" aria-current="page" href="profile.html">會員資料</a>
+            </button>
+          </li>
+
+
+
+        </ul>
+
+
+
+        <!-- <button class="navbar-toggler border" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+
+          <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-4">
+
+            <li class="nav-item">
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#login"><a
+                  class="nav-link active text-black d-flex align-items-center m-0 p-0" aria-current="page" href="#">
+                  <i class="fas fa-shopping-cart"></i>
+                  <p class="m-0 px-2 d-none d-lg-block">購物車</p>
+                </a></button>
+            </li>
+
+            <li class="nav-item d-flex align-items-center">
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#login">
+                <a class="nav-link text-black" href="#">登入</a>
+              </button>
+            </li>
+
+            <li class="nav-item d-flex align-items-center">
+              <button type="button" class="btn">
+                <a class="nav-link active text-black" aria-current="page" href="#">註冊</a>
+              </button>
+            </li>
+
+
+          </ul> -->
+
+
+        <!-- width collapse example -->
+
+        <!-- <p>
+          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample"
+            aria-expanded="false" aria-controls="collapseWidthExample">
+            Toggle width collapse
+          </button>
+        </p>
+        <div style="min-height: 120px;">
+          <div class="collapse collapse-horizontal" id="collapseWidthExample"
+            style="background-color:yellow;float:right;">
+            <div class="card card-body" style="width: 300px;">
+              This is some placeholder content for a horizontal collapse. It's hidden by default and shown when
+              triggered.
+            </div>
+          </div>
+        </div> -->
+
+
+
+
+
+
+      </div>
+
+    </div>
+  </div>
+
+</nav>
+
+<!-- / smaller than lg -->
+
+
 
 
 <!-- PopoverArea -->
@@ -75,7 +215,7 @@
                       </div> -->
       </div>
       <div class="modal-footer">
-        <input type="submit" value="登入" class="btn border">
+        <input type="submit" value="送出" class="btn border">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
       </div>
       </form>

@@ -27,15 +27,8 @@ body {
     margin: auto;
 }
 
-.register-form {
+.pay-form {
     background-color: rgb(212, 233, 233);
     padding: 40px;
     width: 100%;
-}
-
-.register-form-table {
-    /* padding: 20px;
-    margin: 20px; */
-    width: auto;
-    background-color: aliceblue;
 }

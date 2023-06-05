@@ -7,202 +7,6 @@ body {
     vertical-align: baseline;
 }
 
-/* html,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-}
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-    display: block;
-}
-
-body {
-    line-height: 1;
-}
-
-ol,
-ul {
-    list-style: none;
-}
-
-blockquote,
-q {
-    quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-    content: '';
-    content: none;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-body {
-    -webkit-text-size-adjust: none;
-}
-
-mark {
-    background-color: transparent;
-    color: inherit;
-}
-
-input::-moz-focus-inner {
-    border: 0;
-    padding: 0;
-}
-
-input,
-select,
-textarea {
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    -ms-appearance: none;
-    appearance: none;
-}
-
-/* Basic
-
-@-ms-viewport {
-    width: device-width;
-}
-
-body {
-    -ms-overflow-style: scrollbar;
-}
-
-@media screen and (max-width: 480px) {
-    html,
-    body {
-        min-width: 320px;
-    }
-}
-
-html {
-    box-sizing: border-box;
-}
-
-*,
-*:before,
-*:after {
-    box-sizing: inherit;
-}
-
-body {
-    background: #ffffff;
-}
-
-body.is-preload *,
-body.is-preload *:before,
-body.is-preload *:after {
-    -moz-animation: none !important;
-    -webkit-animation: none !important;
-    -ms-animation: none !important;
-    animation: none !important;
-    -moz-transition: none !important;
-    -webkit-transition: none !important;
-    -ms-transition: none !important;
-    transition: none !important;
-}
-
 /* more
  */
 nav {
@@ -213,7 +17,7 @@ nav {
 
 .navbar {
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.822);
+    background-color: rgba(247, 252, 251, 0.87);
     margin-left: auto;
     margin-right: auto;
 }
@@ -239,32 +43,36 @@ a {
 
 @media screen and (max-width: 992px) {
     body {
-        padding-top: 50px;
+        padding-top: 60px;
     }
     .container-fluid {
         /* display: flex;
     justify-content: center; */
-        line-height: 50px;
+        line-height: 60px;
         background-color: rgba(156, 149, 149, 0);
         width: 95%;
     }
-    .sidebar-collapse {
-        display: flex;
-    }
-    .navbar-collapse {
+    .dropdoen-menu {
         position: fixed;
-        top: 50px;
-        right: -100%;
+        top: -60px;
+        right: -500%;
         width: 200px;
-        height: 100%; /* 可調整，不加這行就是隨內容 */
-        padding-top: 2rem;
+        height: 100%;
         background-color: rgb(255, 255, 255);
-        transition: left 0.2s ease-in-out;
     }
-    .navbar-collapse.show {
-        right: 0;
+    /* .sidebar-collapse {
+        display: flex;
+    } */
+    /* .navbar-collapse {
+        position: fixed;
+        top: 60px;
+        right: -500%;
+        width: 200px;
+        height: 100%;
+        background-color: rgb(255, 255, 255);
     }
-    /* .navbar-toggler::after {
+
+    .navbar-toggler::after {
         border: 0px;
     } */
 }
@@ -275,4 +83,12 @@ a {
 
 .row {
     width: 90%;
+}
+
+.dropdown-item:hover {
+    background-color: rgb(209, 209, 209);
+}
+
+.dropdown-item:active {
+    background-color: rgb(104, 104, 104);
 }

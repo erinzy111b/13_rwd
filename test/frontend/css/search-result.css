@@ -62,13 +62,37 @@
     background-color: rgb(190, 190, 190) !important;
 }
 
-.recommend-city {
-    position: absolute;
-    font-size: 50px;
-    color: white;
+.ctr {
+    position: relative;
+    left: 50%;
 }
 
-.recommend-city p {
-    background-color: rgba(75, 75, 75, 0.445);
-    margin: 0px;
+/* display: flex;
+    align-items: center;
+    text-align: center !important;
+    vertical-align: center; */
+
+.room-info {
+    width: 100%;
+}
+
+.room-intro {
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.room-info-detail {
+    font-size: 14px;
+}
+
+.fa-check {
+    color: green;
+}
+
+.fa-xmark {
+    color: red;
+}
+
+.room-info-detail-remark {
+    font-size: 12px;
 }
